@@ -1,0 +1,82 @@
+.quote-page {
+  .title-wrapper {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    h1 {
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+  }
+}
+.quote-main-section {
+  .grid {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    @media (max-width: 850px) {
+      grid-template-columns: 1fr;
+    }
+    .table-wrapper {
+      table {
+        width: 100%;
+        img {
+          width: 100px;
+          height: 100px;
+        }
+        thead {
+          tr {
+            th {
+              border-bottom: 1px solid var(--light-outline);
+              padding: 16px;
+              span {
+                display: block;
+                text-align: left;
+              }
+            }
+          }
+        }
+        tbody {
+          tr {
+            td {
+              border-bottom: 1px solid var(--light-outline);
+              padding: 16px;
+              a {
+                margin-bottom: 8px;
+                display: inline-block;
+              }
+            }
+          }
+        }
+        .secondary-button {
+          padding: 8px 16px;
+          margin-top: 16px;
+        }
+      }
+      .empty-quote-wrapper {
+        display: flex;
+        gap: 16px;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    .form-wrapper {
+      form {
+        margin-top: 24px;
+        .input-wrapper {
+          margin-top: 24px;
+        }
+        input,
+        textarea {
+          margin: 8px 0 8px 0;
+          border: 1px solid var(--light-outline);
+          padding: 16px;
+          border-radius: 8px;
+          display: block;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

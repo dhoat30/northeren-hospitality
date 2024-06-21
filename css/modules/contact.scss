@@ -1,0 +1,57 @@
+.contact-form-wrapper {
+  margin: 40px auto !important;
+  min-height: 716px;
+  max-width: 800px !important;
+  p {
+    text-align: center !important;
+    margin-bottom: 16px;
+  }
+}
+
+.stores-info-container {
+  border-top: 1px solid var(--light-outline);
+  padding-bottom: 40px;
+  .h1 {
+    padding-top: 40px;
+
+    padding-bottom: 40px;
+  }
+  .store-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    @media (max-width: 1200px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 600px) {
+      grid-template-columns: 1fr;
+    }
+    .store-info {
+      background: var(--light-surface-container-low);
+      border: 1px solid var(--light-outline-variant);
+      iframe {
+        width: 100%;
+        position: relative;
+        height: 350px;
+        @media (max-width: 1200px) {
+          height: 300px;
+        }
+      }
+      .content-wrapper {
+        padding: 16px;
+        .subtitle1 {
+          font-weight: 500;
+          margin-top: 16px;
+        }
+        .addresss {
+          p {
+            font-size: 1rem;
+            line-height: 1.5rem;
+            color: var(--light-on-surface-variant);
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,171 @@
+// .archive .variation-swatches {
+//   display: flex;
+//   align-items: center;
+//   gap: 8px;
+//   padding: 16px 8px 0 8px;
+//   flex-wrap: wrap;
+//   .swatch {
+//     width: 36px; /* Set the width you prefer */
+//     height: 36px; /* Set the height you prefer */
+//     border: 2px solid var(--lightGrey);
+//     cursor: pointer;
+
+//     background-size: cover;
+//     position: relative;
+//     border-radius: 50%;
+
+//     img {
+//       object-fit: cover;
+//       border-radius: 50%;
+//       width: 30px;
+//       height: 30px;
+//       border: none !important;
+//       position: absolute;
+//       top: 50%;
+//       left: 50%;
+//       transform: translate(-50%, -50%);
+//     }
+//   }
+//   //   selected swatch
+//   .swatch.selected {
+//     /* Highlight styles */
+//     border: 2px solid var(--darkGrey) !important; /* Example: change border color to blue */
+//   }
+//   .view-more-swatches {
+//     text-decoration: underline !important;
+//     font-size: 0.9rem;
+//   }
+// }
+// #quick-view-modal .variation-swatches {
+//   padding: 8px 0 16px 0 !important;
+// }
+// .variation-swatches {
+//   display: flex;
+//   align-items: center;
+//   gap: 8px;
+//   padding: 8px 0 16px 0;
+//   flex-wrap: wrap;
+//   .swatch {
+//     width: 56px; /* Set the width you prefer */
+//     height: 56px; /* Set the height you prefer */
+//     border: 2px solid var(--lightGrey);
+//     cursor: pointer;
+
+//     background-size: cover;
+//     position: relative;
+//     border-radius: 50%;
+
+//     img {
+//       object-fit: cover;
+//       border-radius: 50%;
+//       width: 50px;
+//       height: 50px;
+//       border: none !important;
+//       position: absolute;
+//       top: 50%;
+//       left: 50%;
+//       transform: translate(-50%, -50%);
+//     }
+//   }
+//   //   selected swatch
+//   .swatch.selected {
+//     /* Highlight styles */
+//     border: 2px solid var(--darkGrey) !important; /* Example: change border color to blue */
+//   }
+//   .view-more-swatches {
+//     text-decoration: underline !important;
+//     font-size: 0.9rem;
+//   }
+// }
+
+// .single .swatch {
+//   position: relative;
+//   display: inline-block;
+//   /* Other styles... */
+// }
+
+// .single .swatch:hover::after {
+//   content: attr(
+//     title
+//   ); /* This will take the content from the title attribute */
+//   position: absolute;
+//   bottom: 100%; /* Position it above the swatch */
+//   left: 50%;
+//   transform: translateX(-50%);
+//   white-space: nowrap;
+//   background-color: #555; /* Tooltip background */
+//   color: white; /* Tooltip text color */
+//   text-align: center;
+//   border-radius: 5px;
+//   padding: 8px 16px;
+//   z-index: 1;
+// }
+
+// .variation-attribute-wrapper {
+//   margin: 24px 0 4px 0;
+//   .attribute-label {
+//     font-weight: 600;
+//   }
+// }
+
+// // hide default variations
+// .single {
+//   .variations {
+//     // display: none !important;
+//   }
+// }
+// .reset-swatches-button {
+//   background: none !important;
+//   border: none;
+//   text-decoration: underline;
+//   cursor: pointer;
+// }
+
+// .archive {
+//   .reset-swatches-button {
+//     display: none !important;
+//   }
+// }
+
+// .swatch {
+//   display: inline-block;
+//   padding: 5px 10px;
+//   margin: 5px;
+//   border: 1px solid #ddd;
+//   cursor: pointer;
+// }
+// .swatch.selected {
+//   border-color: #333;
+// }
+.loop-swatch-wrapper {
+  .swatches {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+    .variation-swatch {
+      cursor: pointer !important;
+    }
+    a {
+      cursor: pointer;
+      text-decoration: underline !important;
+    }
+  }
+}
+.single {
+  .variation-swatch {
+    border: 1px solid #ccc;
+    cursor: pointer;
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+    margin-right: 4px;
+  }
+}
+.variation-swatch.selected {
+  border-color: #333;
+}
+.variation-swatch {
+  border: 1px solid #ccc;
+  cursor: pointer;
+}

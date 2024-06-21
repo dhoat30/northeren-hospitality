@@ -1,0 +1,48 @@
+/* 3rd party packages */
+// @import "normalize.css";
+
+// @import "modules/consultation";
+@import "modules/error-modal";
+// header
+// @import "modules/header/popup-cart";
+// @import "modules/header/header";
+
+// @import "modules/front-page";
+
+@import "modules/loader";
+
+// /*pages */
+
+@import "modules/page";
+
+// /*slider */
+// @import "modules/slider";
+
+/*footer*/
+
+@import "modules/woocommerce/cart/cart";
+@import "modules/woocommerce/checkout/checkout";
+
+// /* modal css  */
+
+// notice css
+
+// @import "modules/webduel-specials";
+
+// services css
+
+/* customer service css  */
+// @import "modules/customer-service/customer-service";
+// @import "modules/customer-service/form";
+
+// variation swatches
+@import "modules/woocommerce/variation-swatches/variation-swatches";
+// /* modal css  */
+@import "modules/modal/modal";
+// /*geo directroy styling*/
+// /*
+// @import "modules/trade-directory/single-board";
+// @import "modules/trade-directory/board-archive-page"; */
+// @import "modules/trade-directory/save-baord";
+// @import "modules/trade/webduel-trade.scss";
+/* Chrome, Safari, Edge, Opera */

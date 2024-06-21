@@ -1,0 +1,111 @@
+.cart-popup-container {
+  position: absolute;
+  right: 0;
+  top: 22px;
+  z-index: 15000 !important;
+  width: 350px;
+  height: auto;
+  display: none;
+  .cart-box {
+    padding: 16px;
+    background: white;
+    box-shadow: var(--boxShadow);
+    border-radius: 12px;
+    border: 1px solid var(--light-outline-variant);
+    // display: none;
+    .title-section {
+      border-bottom: 1px solid var(--light-outline-variant);
+      padding: 8px 0;
+
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .close-cart {
+        svg {
+          cursor: pointer;
+          height: 24px;
+        }
+      }
+
+      .title {
+        font-size: 1.2rem;
+        font-weight: var(--medium);
+      }
+    }
+    .flex-card {
+      height: 300px;
+      overflow: auto;
+      .product-card {
+        padding: 12px 0;
+        border-bottom: 1px solid var(--light-outline-variant);
+        a {
+          text-decoration: none;
+          .row {
+            display: flex;
+            gap: 16px;
+            .img-container {
+              height: 50px !important;
+              width: 60px !important;
+              img {
+                height: 50px !important;
+                width: 50px !important;
+                object-fit: cover;
+              }
+            }
+            .meta-info-wrapper {
+              width: 100%;
+              .product-title {
+                font-size: 0.8rem;
+                line-height: 1.3rem;
+              }
+              .action-row {
+                padding: 8px 0;
+                display: flex;
+                gap: 16px;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                width: 100%;
+                .price-container {
+                  .cart-price {
+                    span {
+                      color: var(--light-on-surface);
+                    }
+                  }
+                  .quantity {
+                    color: var(--light-on-surface);
+                  }
+                  .subtotal {
+                    span {
+                      color: var(--light-on-surface);
+                    }
+                  }
+                }
+                .remove-product {
+                  padding: 4px 16px;
+
+                  span {
+                    font-size: 0.8rem;
+                    position: relative;
+                    top: -2px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .cta-wrapper {
+      padding: 16px 0 0 0;
+      a {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+  .remove-column {
+    cursor: pointer;
+  }
+}

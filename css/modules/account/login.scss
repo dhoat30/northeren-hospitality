@@ -1,0 +1,106 @@
+.woocommerce-account {
+  .woocommerce-notices-wrapper {
+    margin-bottom: 20px;
+  }
+  .woocommerce-button {
+    border-radius: 50px !important;
+    font-weight: 500 !important;
+  }
+  .u-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    @media (max-width: 950px) {
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .u-column1,
+    .u-column2 {
+      flex: 1;
+      margin-right: 10px;
+
+      border-radius: 5px;
+
+      @media (max-width: 950px) {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 100%;
+      }
+
+      h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: #333;
+      }
+
+      form {
+        background: var(--light-surface-container-low);
+        .woocommerce-button {
+          border: none;
+          color: white;
+          padding: 10px 15px !important;
+          border-radius: 3px;
+          margin-top: 8px;
+          cursor: pointer;
+          background-color: var(--primary) !important;
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            background: var(--primaryHover) !important;
+          }
+        }
+        .woocommerce-form-row {
+          margin-bottom: 15px;
+
+          label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+          }
+
+          input[type="text"],
+          input[type="email"],
+          input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 50px;
+          }
+
+          .woocommerce-form__input-checkbox {
+            margin-right: 5px;
+          }
+        }
+
+        .woocommerce-LostPassword {
+          margin-top: 10px;
+
+          a {
+            color: #007bff;
+            text-decoration: none;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .woocommerce-privacy-policy-text {
+    font-size: 14px;
+    margin-top: 20px;
+    p {
+      color: #666;
+    }
+    a {
+      color: #007bff;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

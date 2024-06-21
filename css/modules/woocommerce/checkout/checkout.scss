@@ -1,0 +1,10 @@
+.woocommerce-checkout {
+  .wc-block-components-checkout-place-order-button {
+    background-color: var(--primary);
+    border: none;
+    border-radius: 50px !important;
+    span {
+      color: white;
+    }
+  }
+}

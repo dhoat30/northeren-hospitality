@@ -1,0 +1,1 @@
+<span class="cart-item-count body1"><?php echo WC()->cart->get_cart_contents_count();?></span>

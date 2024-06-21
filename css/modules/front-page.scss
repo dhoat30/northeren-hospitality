@@ -1,0 +1,122 @@
+.home {
+  // slider container
+  // slider container
+  .slider-container {
+    position: relative;
+    padding-bottom: calc(37.03% + 24px);
+    overflow: hidden;
+    width: 100%;
+    .slick-slider {
+      .next-arrow {
+        right: 16px;
+      }
+      .prev-arrow {
+        left: 16px;
+      }
+    }
+
+    .card-list {
+      display: none;
+      position: absolute !important;
+      width: 100%;
+      height: 100%;
+      img {
+        height: auto;
+      }
+      list-style: none;
+    }
+  }
+  .testimonials-section {
+    border-top: 1px solid var(--light-outline);
+    border-bottom: 1px solid var(--light-outline);
+    background: var(--light-surface-container-low);
+    padding: 80px 0;
+    position: relative;
+    top: -1px;
+    .slick-slider {
+      .next-arrow {
+        right: 0px;
+      }
+      .prev-arrow {
+        left: 0px;
+      }
+    }
+    .title-wrapper {
+      .subtitle1 {
+        color: var(--light-tertiary);
+        margin-bottom: 8px;
+      }
+    }
+    .testimonials-wrapper {
+      margin-top: 32px;
+      .slick-slide {
+        margin: 0 8px;
+      }
+      .testimonial-card {
+        padding: 24px 16px;
+        border: 1px solid var(--light-outline-variant);
+        background-color: var(--light-surface-container-high);
+        .testimonial-name {
+        }
+        .rating-stars {
+          margin: 4px 0 12px 0;
+        }
+      }
+    }
+  }
+}
+
+.product-list-container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  overflow: hidden;
+  .products {
+    margin-top: 24px;
+    display: block !important;
+    width: 100%;
+    max-width: 100%;
+
+    .slick-track {
+      margin-left: 0;
+    }
+
+    .product {
+      margin: 0 8px !important;
+      background: var(--light-surface-container);
+      display: block !important;
+      border: 1px solid var(--light-outline-variant);
+      border-radius: 12px;
+      padding-bottom: 16px !important;
+      clear: none;
+
+      position: relative !important;
+      .woocommerce-LoopProduct-link {
+      }
+    }
+  }
+  .section-link {
+    display: block;
+    margin-top: 24px;
+  }
+}
+.category-container {
+  background-color: var(--light-surface-container);
+  .product {
+    background: var(--light-tertiary-container) !important;
+
+    .product-title {
+      .woocommerce-loop-product__title {
+        padding-top: 8px;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        line-height: 1rem;
+        span {
+          letter-spacing: 0.05rem;
+          color: var(--light-on-tertiary-container);
+        }
+      }
+    }
+  }
+}

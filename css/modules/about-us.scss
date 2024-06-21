@@ -1,0 +1,55 @@
+.about-us-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  column-gap: 66px;
+}
+.about-us {
+  padding-top: 60px;
+  padding-bottom: 85px;
+}
+.about-u {
+  padding-bottom: 50px;
+}
+
+.about-u h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 103px;
+  letter-spacing: 0em;
+  @media (max-width: 600px) {
+    font-size: 3rem;
+  }
+}
+.about-images img {
+  height: 996px;
+  width: 856px;
+  object-fit: cover;
+}
+.our-mission h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: 0em;
+}
+
+.our-mission {
+  padding-bottom: 88px;
+}
+.our-mission h2 {
+  padding-bottom: 16px;
+}
+@media (max-width: 1250px) {
+  .about-us-row {
+    flex-direction: column;
+  }
+  .about-images img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  .about-us-row {
+    flex-direction: column;
+    row-gap: 60px;
+  }
+}

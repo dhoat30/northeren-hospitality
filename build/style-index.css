@@ -1,0 +1,224 @@
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./css/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+/* 3rd party packages */
+.loader-icon {
+  border: 3px solid #f3f3f3; /* Light grey */
+  border-top: 1px solid #456679; /* Blue */
+  border-radius: 50% !important;
+  width: 20px;
+  height: 20px;
+  animation: spin 2s linear infinite;
+  display: none;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loader-confirmation {
+  display: none;
+  color: #456679;
+  background-color: #75eac1;
+  padding: 10px;
+}
+
+/*loader*/
+.custom-loader {
+  border: 5px solid #f3f3f3;
+  border-radius: 50% !important;
+  border-top: 5px solid #c09f93;
+  width: 30px;
+  height: 30px; /* Safari */
+  animation: spin 2s linear infinite;
+  display: none;
+}
+
+.loader--visible {
+  display: block;
+}
+
+/* Safari */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*footer*/
+.woocommerce-cart .body-container {
+  padding: 40px 0;
+}
+.woocommerce-cart .body-container .wp-block-heading {
+  margin-top: 24px !important;
+}
+.woocommerce-cart .body-container .wp-block-separator {
+  border-top: 1px solid var(--light-outline-variant);
+  margin: 16px 0;
+}
+.woocommerce-cart .body-container .cart-wrapper {
+  margin-top: 24px;
+}
+.woocommerce-cart .body-container .cart-wrapper .wc-block-cart-items__header span {
+  font-size: 1rem !important;
+}
+.woocommerce-cart .body-container .cart-wrapper .wp-block-woocommerce-cart-order-summary-heading-block {
+  font-size: 1rem !important;
+}
+.woocommerce-cart .coupon {
+  margin: 16px 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 16px;
+}
+.woocommerce-cart .coupon .input-text {
+  margin: 8px 0;
+  display: block;
+  min-width: 200px;
+}
+.woocommerce-cart .coupon button {
+  max-width: 250px;
+}
+
+.wc-block-grid__products {
+  margin-top: 24px !important;
+  display: grid !important;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 16px;
+}
+@media (max-width: 1200px) {
+  .wc-block-grid__products {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 800px) {
+  .wc-block-grid__products {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 500px) {
+  .wc-block-grid__products {
+    grid-template-columns: 1fr;
+  }
+}
+.wc-block-grid__products .wc-block-grid__product {
+  margin: 0 !important;
+  width: 100% !important;
+  border: 1px solid var(--light-outline-variant);
+  background-color: var(--light-surface-container-lowest);
+  border-radius: 12px;
+  padding-bottom: 16px !important;
+  max-width: 100% !important;
+}
+.wc-block-grid__products .wc-block-grid__product .wc-block-grid__product-link {
+  text-decoration: none !important;
+}
+.wc-block-grid__products .wc-block-grid__product .wc-block-grid__product-link:hover {
+  text-decoration: underline !important;
+}
+.wc-block-grid__products .wc-block-grid__product .wc-block-grid__product-image img {
+  border-radius: 12px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.wc-block-grid__products .wc-block-grid__product .wc-block-grid__product-title {
+  padding: 8px 16px 0 16px !important;
+  text-align: left;
+  font-size: 1rem !important;
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 1.2rem;
+}
+.wc-block-grid__products .wc-block-grid__product .wc-block-grid__product-price {
+  text-align: left;
+  padding: 0 16px 0 16px !important;
+}
+.wc-block-grid__products .wc-block-grid__product .wc-block-grid__product-add-to-cart {
+  padding: 0 16px 0 16px !important;
+}
+
+.wc-block-components-button,
+.wp-block-button__link,
+.woocommerce-button,
+.woocommerce-Button,
+.button {
+  cursor: pointer;
+  background: var(--light-primary-container) !important;
+  letter-spacing: 0.05rem !important;
+  transition: var(--transition) !important;
+  border-radius: 50px !important;
+  text-decoration: none;
+  font-weight: 400 !important;
+  font-size: 1rem !important;
+  text-align: center !important;
+  color: var(--light-on-primary-container) !important;
+}
+.wc-block-components-button:hover,
+.wp-block-button__link:hover,
+.woocommerce-button:hover,
+.woocommerce-Button:hover,
+.button:hover {
+  filter: brightness(0.8);
+}
+.wc-block-components-button span,
+.wp-block-button__link span,
+.woocommerce-button span,
+.woocommerce-Button span,
+.button span {
+  color: var(--light-on-primary-container) !important;
+}
+
+.woocommerce-checkout .wc-block-components-checkout-place-order-button {
+  background-color: var(--primary);
+  border: none;
+  border-radius: 50px !important;
+}
+.woocommerce-checkout .wc-block-components-checkout-place-order-button span {
+  color: white;
+}
+
+/* customer service css  */
+.loop-swatch-wrapper .swatches {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.loop-swatch-wrapper .swatches .variation-swatch {
+  cursor: pointer !important;
+}
+.loop-swatch-wrapper .swatches a {
+  cursor: pointer;
+  text-decoration: underline !important;
+}
+
+.single .variation-swatch {
+  border: 1px solid #ccc;
+  cursor: pointer;
+  display: inline-block;
+  background-size: cover;
+  background-position: center;
+  margin-right: 4px;
+}
+
+.variation-swatch.selected {
+  border-color: #333;
+}
+
+.variation-swatch {
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+/* Chrome, Safari, Edge, Opera */
+
+/*# sourceMappingURL=style-index.css.map*/
